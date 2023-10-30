@@ -12,6 +12,10 @@ nav {
   padding: 0;
 }
 
+.name li {
+  list-style: none;
+}
+
 .page-links li {
   list-style: none;
   cursor: pointer;

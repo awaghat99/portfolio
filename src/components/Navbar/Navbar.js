@@ -13,7 +13,7 @@ const Navbar = () => {
   return (
     <nav>
       <ul className="full-nav">
-        <div>
+        <div className="name">
           <li>Aadil Waghat</li>
         </div>
         <div className="page-links">
