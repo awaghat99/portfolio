@@ -48,6 +48,7 @@ nav button {
   font-size: 22px;
   border-radius: 7px;
   transition: background-color 0.3s ease-in;
+  margin-left: 25px;
 }
 
 nav button:hover {

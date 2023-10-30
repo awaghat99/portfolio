@@ -19,9 +19,8 @@ const Navbar = () => {
         <div className="page-links">
           <li>About</li>
           <li>Projects</li>
-          <li>
-            <button>Contact</button>
-          </li>
+          <button>Contact</button>
+
           {dropdown ? <img src={cross} alt="cross" onClick={toggleDropdown} /> : <img src={hamburger} alt="hamburger" onClick={toggleDropdown} />}
         </div>
       </ul>
