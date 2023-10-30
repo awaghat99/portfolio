@@ -14,7 +14,7 @@ const Navbar = () => {
     <nav>
       <ul className="full-nav">
         <div className="name">
-          <li>Aadil Waghat</li>
+          <li>AW</li>
         </div>
         <div className="page-links">
           <li>About</li>
