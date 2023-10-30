@@ -12,7 +12,7 @@ nav {
   padding: 0;
 }
 
-nav li {
+.page-links li {
   list-style: none;
   cursor: pointer;
   display: inline-block;
