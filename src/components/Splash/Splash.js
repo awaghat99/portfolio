@@ -4,6 +4,7 @@ import "./Splash.css";
 import pdf from "../../images/pdf.svg";
 import github from "../../images/github.svg";
 import linkedIn from "../../images/linkedin.svg";
+import CV from "../../static/CV.pdf";
 
 const Splash = () => {
   return (
@@ -17,9 +18,15 @@ const Splash = () => {
           I'm a Full Stack Developer with a strong passion for building web applications with great user experiences. Here's a bit more <span>about me.</span>
         </p>
         <div className="socials">
-          <img src={github} alt="github" />
-          <img src={linkedIn} alt="linkedIn" />
-          <img src={pdf} alt="pdf" />
+          <a href="https://github.com/awaghat99" target="_blank">
+            <img src={github} alt="github" />
+          </a>
+          <a href="https://www.linkedin.com/in/aadil-waghat-a69953227/" traget="_blank">
+            <img src={linkedIn} alt="linkedIn" />
+          </a>
+          <a href={CV} target="_blank">
+            <img src={pdf} alt="pdf" />
+          </a>
         </div>
       </div>
     </div>
