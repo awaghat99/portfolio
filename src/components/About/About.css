@@ -15,3 +15,21 @@
   text-align: left;
   color: white;
 }
+
+@media (max-width: 800px) {
+  .about {
+    padding: 50px;
+    flex-direction: column;
+  }
+
+  .about img {
+    width: 85%;
+    margin: auto;
+  }
+
+  .about-text {
+    width: 85%;
+    margin: 0 auto 25px;
+    text-align: center;
+  }
+}
