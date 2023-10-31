@@ -9,7 +9,7 @@ import mongo from "../../images/mongo.png";
 
 const Tech = () => {
   return (
-    <section>
+    <section className="tech-section">
       <div className="tech-title">
         <h2>My Technologies</h2>
       </div>
