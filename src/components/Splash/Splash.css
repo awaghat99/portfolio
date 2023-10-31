@@ -5,11 +5,8 @@
 }
 
 .splash {
-  overflow: hidden;
-}
-
-.splash {
   position: relative;
+  overflow: hidden;
 }
 
 .splash:before {

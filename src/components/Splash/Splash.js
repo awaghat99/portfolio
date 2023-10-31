@@ -18,13 +18,13 @@ const Splash = () => {
           I'm a Full Stack Developer with a strong passion for building web applications with great user experiences. Here's a bit more <span>about me.</span>
         </p>
         <div className="socials">
-          <a href="https://github.com/awaghat99" target="_blank">
+          <a href="https://github.com/awaghat99" target="_blank" rel="noreferrer">
             <img src={github} alt="github" />
           </a>
-          <a href="https://www.linkedin.com/in/aadil-waghat-a69953227/" traget="_blank">
+          <a href="https://www.linkedin.com/in/aadil-waghat-a69953227/" target="_blank" rel="noreferrer">
             <img src={linkedIn} alt="linkedIn" />
           </a>
-          <a href={CV} target="_blank">
+          <a href={CV} target="_blank" rel="noreferrer">
             <img src={pdf} alt="pdf" />
           </a>
         </div>
