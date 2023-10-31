@@ -4,7 +4,7 @@ import codeImage from "../../images/code-image.avif";
 
 const About = () => {
   return (
-    <section className="about">
+    <section className="about" id="about">
       <div className="about-text">
         <h2>About Me</h2>
         <p>

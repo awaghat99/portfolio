@@ -18,8 +18,12 @@ const Navbar = () => {
             <li>AW</li>
           </div>
           <div className="page-links">
-            <li>About</li>
-            <li>Projects</li>
+            <li>
+              <a href="#about">About</a>
+            </li>
+            <li>
+              <a href="/">Projects</a>
+            </li>
             <button>Contact</button>
 
             {dropdown ? <img src={cross} alt="cross" onClick={toggleDropdown} /> : <img src={hamburger} alt="hamburger" onClick={toggleDropdown} />}
