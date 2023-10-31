@@ -11,19 +11,21 @@ const Navbar = () => {
   };
 
   return (
-    <nav>
-      <ul className="full-nav">
-        <div className="name">
-          <li>AW</li>
-        </div>
-        <div className="page-links">
-          <li>About</li>
-          <li>Projects</li>
-          <button>Contact</button>
+    <div className="nav">
+      <nav>
+        <ul className="full-nav">
+          <div className="name">
+            <li>AW</li>
+          </div>
+          <div className="page-links">
+            <li>About</li>
+            <li>Projects</li>
+            <button>Contact</button>
 
-          {dropdown ? <img src={cross} alt="cross" onClick={toggleDropdown} /> : <img src={hamburger} alt="hamburger" onClick={toggleDropdown} />}
-        </div>
-      </ul>
+            {dropdown ? <img src={cross} alt="cross" onClick={toggleDropdown} /> : <img src={hamburger} alt="hamburger" onClick={toggleDropdown} />}
+          </div>
+        </ul>
+      </nav>
       <ul className={dropdown ? "dropdown open" : "dropdown"}>
         <li>About</li>
         <li>Projects</li>
@@ -31,7 +33,7 @@ const Navbar = () => {
           <button>Contact</button>
         </li>
       </ul>
-    </nav>
+    </div>
   );
 };
 
