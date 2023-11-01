@@ -22,11 +22,17 @@ const Navbar = () => {
               <a href="#about">About</a>
             </li>
             <li>
-              <a href="/">Projects</a>
+              <a href="#projects">Projects</a>
             </li>
-            <button>Contact</button>
+            <button>
+              <a href="#contact">Contact</a>
+            </button>
 
-            {dropdown ? <img src={cross} alt="cross" onClick={toggleDropdown} /> : <img src={hamburger} alt="hamburger" onClick={toggleDropdown} />}
+            {dropdown ? (
+              <img src={cross} alt="cross" onClick={toggleDropdown} />
+            ) : (
+              <img src={hamburger} alt="hamburger" onClick={toggleDropdown} />
+            )}
           </div>
         </ul>
       </nav>

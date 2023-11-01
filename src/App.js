@@ -4,6 +4,7 @@ import Splash from "./components/Splash/Splash";
 import About from "./components/About/About";
 import Tech from "./components/Tech/Tech";
 import Projects from "./components/Projects/Projects";
+import Contact from "./components/Contact/Contact";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <About />
       <Tech />
       <Projects />
+      <Contact />
     </div>
   );
 }

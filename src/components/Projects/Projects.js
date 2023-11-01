@@ -6,7 +6,7 @@ import link from "../../images/link.svg";
 
 const Projects = () => {
   return (
-    <section className="projects-section">
+    <section className="projects-section" id="projects">
       <div className="project-title">
         <h2>My Projects</h2>
       </div>
