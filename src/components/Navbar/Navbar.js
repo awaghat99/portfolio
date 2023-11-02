@@ -37,10 +37,16 @@ const Navbar = () => {
         </ul>
       </nav>
       <ul className={dropdown ? "dropdown open" : "dropdown"}>
-        <li>About</li>
-        <li>Projects</li>
         <li>
-          <button>Contact</button>
+          <a href="#about">About</a>
+        </li>
+        <li>
+          <a href="#projects">Projects</a>
+        </li>
+        <li>
+          <button>
+            <a href="#contact">Contact</a>
+          </button>
         </li>
       </ul>
     </div>

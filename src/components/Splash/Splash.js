@@ -15,7 +15,11 @@ const Splash = () => {
           Hey,<br></br> I'm Aadil
         </h1>
         <p>
-          I'm a Full Stack Developer with a strong passion for building responsive web applications with great user experiences. Here's a bit more <span>about me.</span>
+          I'm a Full Stack Developer with a strong passion for building responsive web applications with great
+          user experiences. Here's a bit more{" "}
+          <span>
+            <a href="#about">about me.</a>
+          </span>
         </p>
         <div className="socials">
           <a href="https://github.com/awaghat99" target="_blank" rel="noreferrer">

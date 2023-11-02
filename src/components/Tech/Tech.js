@@ -23,24 +23,24 @@ const Tech = () => {
           <p>HTML</p>
         </div>
         <div className={`tech-icon ${iconIsVisible && "animate-icon"}`}>
-          <img src={css} alt="html" />
-          <p>HTML</p>
+          <img src={css} alt="CSS" />
+          <p>CSS</p>
         </div>
         <div className={`tech-icon ${iconIsVisible && "animate-icon"}`}>
-          <img src={javascript} alt="html" />
-          <p>HTML</p>
+          <img src={javascript} alt="JavaScript" />
+          <p>JavaScript</p>
         </div>
         <div className={`tech-icon ${iconIsVisible && "animate-icon"}`}>
-          <img src={react} alt="html" />
-          <p>HTML</p>
+          <img src={react} alt="React" />
+          <p>React</p>
         </div>
         <div className={`tech-icon ${iconIsVisible && "animate-icon"}`}>
-          <img src={sql} alt="html" />
-          <p>HTML</p>
+          <img src={sql} alt="SQL" />
+          <p>SQL</p>
         </div>
         <div className={`tech-icon ${iconIsVisible && "animate-icon"}`}>
-          <img src={mongo} alt="html" />
-          <p>HTML</p>
+          <img src={mongo} alt="Mongo" />
+          <p>Mongo</p>
         </div>
       </div>
     </section>

@@ -11,11 +11,15 @@ const About = () => {
       <div className={`about-text ${textIsVisible && "animate-text"}`} ref={textRef}>
         <h2>About Me</h2>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam in sem rutrum, egestas lorem ut,
-          euismod augue. Proin venenatis ligula odio, ac mollis tellus sagittis sit amet. Aenean dui nibh,
-          vulputate a urna quis, pulvinar dictum diam. Nulla efficitur ligula ut cursus scelerisque. Vivamus
-          lorem erat, consectetur ac lobortis egestas, tincidunt vel tortor. Morbi consectetur, sem ut
-          tincidunt suscipit, ante tortor dapibus quam, id tincidunt ex dolor sit amet ex.
+          As a Mathematics graduate, my passion for problem-solving led me to the dynamic realm of coding and
+          software development. I honed my skills through dedicated online courses and a rigorous 12-week
+          software boot camp at Code Nation. <br />
+          Through these courses I became proficient in front-end technologies such as HTML, CSS, JavaScript,
+          React, and Redux. I also possess a strong foundation in database management using SQL and Mongo, as
+          well as an understanding of git, GitHub and version control.
+          <br /> I am enthusiastic about continuous learning and growth, embracing challenges as they come,
+          and I am eager to utilize my diverse skill set to contribute meaningfully as a junior developer in
+          this fast-paced, ever-evolving industry.
         </p>
       </div>
       <img
