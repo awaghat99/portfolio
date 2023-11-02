@@ -8,13 +8,15 @@
 .about-img {
   width: 35%;
   opacity: 0;
-  transform: translateX(100px);
+  transform: translateX(50px);
+  filter: blur(0);
   transition: all 1s ease;
 }
 
 .animate-image {
   opacity: 1;
   transform: translateX(0);
+  filter: blur(0);
 }
 
 .about-text {
@@ -22,13 +24,15 @@
   text-align: left;
   color: #545353;
   opacity: 0;
-  transform: translateX(-100px);
+  transform: translateX(-50px);
+  filter: blur(5px);
   transition: all 1s ease;
 }
 
 .animate-text {
   opacity: 1;
   transform: translateX(0);
+  filter: blur(0);
 }
 
 @media (max-width: 800px) {

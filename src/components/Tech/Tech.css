@@ -1,7 +1,21 @@
 .tech-section {
   background-color: #545353;
   color: white;
-  padding: 30px 0;
+  padding: 50px 0;
+}
+
+.tech-title {
+  opacity: 0;
+  transform: translateY(-100px);
+  filter: blur(5px);
+  transition: all 1s ease;
+  margin-bottom: 30px;
+}
+
+.animate-title {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateY(0);
 }
 
 .tech-icons {
@@ -13,8 +27,38 @@
 }
 
 .tech-icon {
+  opacity: 0;
+  transform: translateX(-100px);
+  filter: blur(3px);
   min-width: 14%;
   max-width: 14%;
+  transition: all 1s ease;
+}
+
+.animate-icon:nth-child(2) {
+  transition-delay: 200ms;
+}
+
+.animate-icon:nth-child(3) {
+  transition-delay: 400ms;
+}
+
+.animate-icon:nth-child(4) {
+  transition-delay: 600ms;
+}
+
+.animate-icon:nth-child(5) {
+  transition-delay: 800ms;
+}
+
+.animate-icon:nth-child(6) {
+  transition-delay: 1000ms;
+}
+
+.animate-icon {
+  opacity: 1;
+  transform: translateX(0);
+  filter: blur(0);
 }
 
 .tech-icon img {

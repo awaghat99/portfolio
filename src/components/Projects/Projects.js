@@ -3,15 +3,19 @@ import "./Projects.css";
 import marvel from "../../images/marvel-screenshot.png";
 import github from "../../images/github.svg";
 import link from "../../images/link.svg";
+import { useInView } from "react-intersection-observer";
 
 const Projects = () => {
+  const { ref: titleRef, inView: titleIsVisible } = useInView();
+  const { ref: projectRef, inView: projectIsVisible } = useInView();
+
   return (
     <section className="projects-section" id="projects">
-      <div className="project-title">
+      <div className={`project-title ${titleIsVisible && "animate-title"}`} ref={titleRef}>
         <h2>My Projects</h2>
       </div>
-      <div className="projects">
-        <div className="project">
+      <div className="projects" ref={projectRef}>
+        <div className={`project ${projectIsVisible && "animate-project"}`}>
           <img src={marvel} alt="marvel screenshot" />
           <div className="project-wrapper-bg">
             <h3 className="project-title">Marvel Site</h3>
@@ -19,8 +23,10 @@ const Projects = () => {
             <h4 className="project-languages">HTML,CSS,JavaScript,React,Sequelize</h4>
             <div className="project-desc-holder">
               <p className="project-desc">
-                As the final project for our Codenation bootcamp, our group developed a website centered around Marvel characters. Explore a collection of these characters, their stats, comic
-                appearances, and variants. You can log in to add characters to your favorites and personalize your profile picture. Deployed with Netlify.
+                As the final project for our Codenation bootcamp, our group developed a website centered
+                around Marvel characters. Explore a collection of these characters, their stats, comic
+                appearances, and variants. You can log in to add characters to your favorites and personalize
+                your profile picture. Deployed with Netlify.
               </p>
             </div>
 
