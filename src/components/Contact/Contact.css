@@ -59,3 +59,26 @@
 #contact button:hover {
   background-color: #1145ad;
 }
+
+@media (max-width: 700px) {
+  #contact {
+    flex-direction: column;
+  }
+
+  .contact-text {
+    width: 95%;
+    margin-bottom: 20px;
+  }
+
+  #contact form {
+    width: 95%;
+  }
+
+  #contact h2 {
+    font-size: 28px;
+  }
+
+  #contact p {
+    font-size: 18px;
+  }
+}
