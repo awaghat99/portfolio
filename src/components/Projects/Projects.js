@@ -7,7 +7,7 @@ import { useInView } from "react-intersection-observer";
 
 const Projects = () => {
   const { ref: titleRef, inView: titleIsVisible } = useInView();
-  const { ref: projectRef, inView: projectIsVisible } = useInView();
+  const { ref: projectRef, inView: projectIsVisible } = useInView({ threshold: 0.5 });
 
   return (
     <section className="projects-section" id="projects">
@@ -18,7 +18,7 @@ const Projects = () => {
         <div className={`project ${projectIsVisible && "animate-project"}`}>
           <img src={marvel} alt="marvel screenshot" />
           <div className="project-wrapper-bg">
-            <h3 className="project-title">Marvel Site</h3>
+            <h3 className="project-card-title">Marvel Site</h3>
             <br />
             <h4 className="project-languages">HTML,CSS,JavaScript,React,Sequelize</h4>
             <div className="project-desc-holder">

@@ -88,3 +88,19 @@
     width: 90%;
   }
 }
+
+@media (max-width: 400px) {
+  .project-card-title {
+    margin: 0;
+  }
+
+  .project-languages {
+    margin: 0;
+  }
+}
+
+@media (max-width: 350px) {
+  .project-languages {
+    display: none;
+  }
+}
