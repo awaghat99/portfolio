@@ -3,8 +3,8 @@ import codeImage from "../../images/code-image.avif";
 import { useInView } from "react-intersection-observer";
 
 const About = () => {
-  const { ref: textRef, inView: textIsVisible } = useInView();
-  const { ref: imageRef, inView: imageIsVisible } = useInView();
+  const { ref: textRef, inView: textIsVisible } = useInView({ triggerOnce: true });
+  const { ref: imageRef, inView: imageIsVisible } = useInView({ triggerOnce: true });
 
   return (
     <section className="about" id="about">

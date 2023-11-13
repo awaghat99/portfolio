@@ -9,8 +9,8 @@ import sql from "../../images/database.png";
 import mongo from "../../images/mongo.png";
 
 const Tech = () => {
-  const { ref: titleRef, inView: titleIsVisible } = useInView();
-  const { ref: iconRef, inView: iconIsVisible } = useInView();
+  const { ref: titleRef, inView: titleIsVisible } = useInView({ triggerOnce: true });
+  const { ref: iconRef, inView: iconIsVisible } = useInView({ triggerOnce: true });
 
   return (
     <section className="tech-section">

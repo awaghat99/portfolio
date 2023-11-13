@@ -6,8 +6,8 @@ import link from "../../images/link.svg";
 import { useInView } from "react-intersection-observer";
 
 const Projects = () => {
-  const { ref: titleRef, inView: titleIsVisible } = useInView();
-  const { ref: projectRef, inView: projectIsVisible } = useInView({ threshold: 0.5 });
+  const { ref: titleRef, inView: titleIsVisible } = useInView({ triggerOnce: true });
+  const { ref: projectRef, inView: projectIsVisible } = useInView({ threshold: 0.5, triggerOnce: true });
 
   return (
     <section className="projects-section" id="projects">
