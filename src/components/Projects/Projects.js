@@ -2,6 +2,7 @@ import React from "react";
 import "./Projects.css";
 import marvel from "../../images/marvel-screenshot.png";
 import fitness from "../../images/fitness-screen.png";
+import movie from "../../images/movie-screen.png";
 import github from "../../images/github.svg";
 import link from "../../images/link.svg";
 import { useInView } from "react-intersection-observer";
@@ -10,6 +11,7 @@ const Projects = () => {
   const { ref: titleRef, inView: titleIsVisible } = useInView({ triggerOnce: true });
   const { ref: project1Ref, inView: project1IsVisible } = useInView({ threshold: 0.5, triggerOnce: true });
   const { ref: project2Ref, inView: project2IsVisible } = useInView({ threshold: 0.5, triggerOnce: true });
+  const { ref: project3Ref, inView: project3IsVisible } = useInView({ threshold: 0.5, triggerOnce: true });
 
   return (
     <section className="projects-section" id="projects">
@@ -62,6 +64,31 @@ const Projects = () => {
                 <img className="project-icon" src={github} alt="github-logo" />
               </a>
               <a href="https://tailwind-fitness-landing.netlify.app/" target="_blank" rel="noreferrer">
+                <img className="project-icon" src={link} alt="link-icon" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="projects" ref={project3Ref}>
+        <div className={`project ${project3IsVisible && "animate-project"}`}>
+          <img src={movie} alt="movie screenshot" />
+          <div className="project-wrapper-bg">
+            <h3 className="project-card-title">The Trailers</h3>
+            <br />
+            <h4 className="project-languages">HTML,CSS,JavaScript,React,Tailwind</h4>
+            <div className="project-desc-holder">
+              <p className="project-desc">
+                Explore trending movies with our The Movie DB API-powered website. Stay updated with the
+                latest hits!
+              </p>
+            </div>
+
+            <div className="image-container">
+              <a href="https://github.com/awaghat99/movie-frontend" target="_blank" rel="noreferrer">
+                <img className="project-icon" src={github} alt="github-logo" />
+              </a>
+              <a href="https://the-trailer.netlify.app/" target="_blank" rel="noreferrer">
                 <img className="project-icon" src={link} alt="link-icon" />
               </a>
             </div>
